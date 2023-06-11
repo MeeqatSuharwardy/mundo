@@ -1,4 +1,3 @@
-web: python manage.py migrate
-web: python manage.py runserver
-web: gunicorn CCMS.wsgi --log-file -
+web: gunicorn final.wsgi --log-file -
 heroku config:set DISABLE_COLLECTSTATIC=1
+web: python manage.py migrate
