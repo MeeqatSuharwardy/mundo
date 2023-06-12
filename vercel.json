@@ -21,7 +21,9 @@
     },
     {
       "src": "/(.*)",
-      "dest": "final/wsgi.py"
+      "dest": "final/wsgi.py",
+       "src": "/api/(.*)",
+      "dest": "final/urls.py"
     }
   ]
 }
